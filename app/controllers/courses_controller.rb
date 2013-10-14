@@ -10,5 +10,8 @@ class CoursesController < ApplicationController
     response = Net::HTTP.get_response(uri)
     @courses = JSON.parse(response.body)
 
+    @prev_course_id = params[:page].present? && params[:page].to_i > 1 ? params[:page].to_i - 1 : nil
+    @next_course_id = params[:page].present? ? params[:page].to_i + 1 : 2
+
   end
 end
