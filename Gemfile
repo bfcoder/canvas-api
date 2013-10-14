@@ -33,16 +33,5 @@ group :doc do
 end
 
 gem 'link_header'
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
-  gem 'byebug' # ruby 2.0 debugger, group: [:development, :test]
+gem 'simple_form'
+gem 'byebug', group: [:development, :test] # ruby 2.0 debugger

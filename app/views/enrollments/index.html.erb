@@ -1,1 +1,6 @@
-<div>asdf</div>
+<%= simple_form_for :user, url: course_enrollments_path do |f| %>
+  <%#= f.hidden_field :id, value: @.id %>
+  <%= f.input :type %>
+  <%= f.input :name %>
+  <%= f.submit 'Add' %>
+<% end -%>
