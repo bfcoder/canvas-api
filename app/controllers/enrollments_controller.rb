@@ -15,13 +15,10 @@ class EnrollmentsController < ApplicationController
     req = Net::HTTP::Post.new uri
     req.body = {"user" => params[:user]}.to_json
     req.content_type = 'application/json'
-    # req.set_form_data({"user" => params[:user]})
 
     response = Net::HTTP.start(uri.host, uri.port) do |http|
       http.request req
     end
-
-    # response = Net::HTTP.post_form(uri, {"user" => params[:user]})
 
     puts params[:user]
     puts response.body
