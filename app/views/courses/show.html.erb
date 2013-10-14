@@ -1,6 +1,6 @@
 <%= link_to 'Courses', courses_path %>
 <h1><%= @course['name'] %></h1>
-<div><%= @course['code'] %></div>
-<div><%= @course['description'] %></div>
-<div><%= @course['start_at'] %></div>
-<div><%= @course['end_at'] %></div>
+<h4><%= @course['code'] %></h4>
+<div>Description: <%= @course['description'] %></div>
+<div>Starts at: <%= @course['start_at'] %></div>
+<div>Ends at: <%= @course['end_at'] %></div>
