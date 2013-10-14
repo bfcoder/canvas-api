@@ -43,3 +43,4 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+  gem 'byebug' # ruby 2.0 debugger, group: [:development, :test]
