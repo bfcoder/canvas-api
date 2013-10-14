@@ -1,6 +1,6 @@
 CanvasApi::Application.routes.draw do
   root to: 'courses#index'
-  resources :courses, via: [:get]
+  resources :courses, :only => [:index, :show]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
