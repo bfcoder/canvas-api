@@ -1,5 +1,5 @@
 <% @courses.each do |course| -%>
-  <h1><%= link_to course['name'], course_path(course['id']) %></h1>
+  <h1><%= link_to course['name'], course_path(course['id'], :page => @page) %></h1>
 <% end -%>
 <span><%= @prev_course_id.nil? ? "Previous" : link_to('Previous', courses_path(:page => @prev_course_id)) %></span>
 <span><%= @next_course_id.nil? ? "Next" : link_to('Next', courses_path(:page => @next_course_id)) %></span>
